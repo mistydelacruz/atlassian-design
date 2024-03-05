@@ -1,0 +1,37 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.left-side {
+  background-color: rgba(226, 231, 255, 1);
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left-content{
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 75%;
+  text-align: left;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 25px;
+}
+
+p strong strong{
+  color: rgba(128, 81, 255, 1);
+}
+
+.submit {
+  background-color: rgba(159, 134, 227, 1);
+}
