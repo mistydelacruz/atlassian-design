@@ -1,7 +1,7 @@
 /***************************************
 * Created by: Misty Dela Cruz
 * Created on: 2/7/2024
-* Last Modified: 3/12/2024
+* Last Modified: 4/16/2024
 * Updates:
 * Styling the webpage as needed
 ***************************************/
@@ -10,8 +10,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.left-side {
-  background-color: rgba(226, 231, 255, 1);
+.split {
   width: 50%;
   height: 100%;
   position: fixed;
@@ -21,14 +20,27 @@ body {
   padding-top: 20px;
 }
 
+.left {
+  left: 0;
+  background-color: rgba(226, 231, 255, 1);
+}
+
+.left .logo {
+  padding-left: 20px;
+}
+
+.left .logo img {
+  width: 150px;
+}
+
 .left-content{
   background-color: white;
   position: absolute;
-  top: 10%;
+  top: 25%;
   left: 10%;
   width: 75%;
   text-align: left;
-  padding: 1%;
+  padding: 3%;
   border-radius: 5px;
 }
 
@@ -42,8 +54,8 @@ p strong strong{
 
 .register p {
   font-size: 20px;
-  padding-top: 2em;
-  padding-bottom: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 em {
@@ -53,13 +65,17 @@ em {
 
 .first-button {
   display: flex;
-  /* background-color: blue; */
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .sec-button {
   display: flex;
-  /* background-color: aquamarine; */
-  padding-bottom: 3em;
+  padding-bottom: 30px;
+}
+
+.right {
+  right: 0;
+  top: 20%;
+  bottom: 20%;
 }

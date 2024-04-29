@@ -1,0 +1,17 @@
+.carousel {
+    right: 0;
+    height: 100px;
+    width: 20%;
+    background-color: black;
+    text-align: center;
+}
+
+.carouselInner {
+    right: 0;
+    height: 20px;
+    
+}
+
+.carouselInner img {
+    width: 500%;
+}

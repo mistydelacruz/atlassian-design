@@ -1,7 +1,7 @@
 /***************************************
 * Created by: Misty Dela Cruz
 * Created on: 2/7/2024
-* Last Modified: 3/12/2024
+* Last Modified: 4/16/2024
 * Updates:
 * Added the Button component and coding out the layout of the page
 ***************************************/
@@ -9,15 +9,20 @@
 import './App.css'
 import '@atlaskit/css-reset';
 import Button from '@atlaskit/button';
+import Logo from './assets/ImagineLogo.png'
+import Carousel from './components/carousel';
 
 function App() {
 
   return (
     <>
-      <div className='left-side'>             {/*Divider for the left side of the page*/}
-        <div className='left-content'>        {/*Divider for the contents of the left side*/}
+      <div className='split left'>             {/*Divider for the left side of the page*/}
+        <div className='logo'>                 {/*Divider for the logo */}
+          <img src={Logo} alt='logo'/>
+        </div>
+        <div className='left-content'>         {/*Divider for the contents of the left side*/}
           <h1><strong>Welcome!</strong></h1>
-          <p><strong>Please <strong>login</strong> to your account</strong></p>
+          <p className='sub'><strong>Please <strong>login</strong> to your account</strong></p>
           <div className='register'>                                                        {/*Divider for register*/}
             <p>Don't have an account? <em>Register</em></p>
           </div>
@@ -28,6 +33,9 @@ function App() {
             <Button appearance='primary' shouldFitContainer>Login with YubiKey</Button>
           </div>
         </div>
+      </div>
+      <div className='split right'>
+        <Carousel />
       </div>
     </>
   )
