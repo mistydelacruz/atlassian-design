@@ -10,7 +10,7 @@ import './App.css'
 import '@atlaskit/css-reset';
 import Button from '@atlaskit/button';
 import Logo from './assets/ImagineLogo.png'
-import Carousel from './components/carousel';
+import Carousel from './components/Carousel';
 
 function App() {
 
@@ -23,18 +23,18 @@ function App() {
         <div className='left-content'>         {/*Divider for the contents of the left side*/}
           <h1><strong>Welcome!</strong></h1>
           <p className='sub'><strong>Please <strong>login</strong> to your account</strong></p>
-          <div className='register'>                                                        {/*Divider for register*/}
+          <div className='register'>                                                            {/*Divider for register*/}
             <p>Don't have an account? <em>Register</em></p>
           </div>
-          <div className='first-button'>                                                    {/*Divider for the first button login*/}
+          <div className='first-button'>                                                        {/*Divider for the first button login*/}
             <Button appearance='primary'shouldFitContainer>Login with CAC</Button>
           </div>
-          <div className='sec-button'>                                                      {/*Divider for the second button login*/}
+          <div className='sec-button'>                                                          {/*Divider for the second button login*/}
             <Button appearance='primary' shouldFitContainer>Login with YubiKey</Button>
           </div>
         </div>
       </div>
-      <div className='split right'>
+      <div className='split right'>            {/*Divider for the right side: Image Carousel*/}
         <Carousel />
       </div>
     </>
