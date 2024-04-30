@@ -1,7 +1,7 @@
 /***************************************
 * Created by: Misty Dela Cruz
 * Created on: 2/7/2024
-* Last Modified: 4/16/2024
+* Last Modified: 4/29/2024
 * Updates:
 * Added the Button component and coding out the layout of the page
 ***************************************/
@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <div className='split left'>             {/*Divider for the left side of the page*/}
-        <div className='logo'>                 {/*Divider for the logo */}
+        <div className='logo'>                 {/*Divider for the logo*/}
           <img src={Logo} alt='logo'/>
         </div>
         <div className='left-content'>         {/*Divider for the contents of the left side*/}
